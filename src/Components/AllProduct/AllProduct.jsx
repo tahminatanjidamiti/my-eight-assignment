@@ -1,5 +1,5 @@
-import { NavLink, Outlet, useLoaderData } from 'react-router-dom';
-import Product from '../Product/Product';
+import { NavLink, Outlet } from 'react-router-dom';
+
 
 
 const AllProduct = () => {
