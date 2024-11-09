@@ -3,10 +3,11 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='p-10'>
-            <div className='w-8/12 mx-auto text-center pb-10 border-b'>
+            <div className='w-8/12 mx-auto text-center pb-10'>
                 <h1 className='font-bold text-3xl mb-5'>Gadget Zone</h1>
                 <p>Pioneering the future with innovative technology and groundbreaking advancements!</p>
             </div>
+            <hr className='w-10/12 mx-auto' />
             <footer className="footer w-8/12 mx-auto mt-10">
             <nav className='text-center'>
                 <h6 className=" text-black text-lg font-bold">Services</h6>
