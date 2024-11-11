@@ -13,8 +13,7 @@ import Statistics from './Components/Statistics/Statistics.jsx';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import Popularity from './Components/Popularity/Popularity.jsx';
 import AllProduct from './Components/AllProduct/AllProduct.jsx';
-import Laptops from './Components/Laptops/Laptops.jsx';
-import Error from './Components/Error/Error.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -26,15 +25,15 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
+        loader: () => fetch('/gadgets.json'),
         children:[
           {
             path: '/',
             element: <AllProduct></AllProduct>,
-            errorElement: <Error></Error>,
           },
           {
-            path: '/laptops',
-            element: <Laptops></Laptops>
+            path: '/category/:category',
+            element: <AllProduct></AllProduct>
           },
         ]
       },

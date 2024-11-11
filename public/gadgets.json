@@ -1,145 +1,204 @@
 [
-    {
-      "product_id": 1,
-      "product_title": "Dell Inspiron 15",
-      "product_image": "https://i.ibb.co.com/QCQ41qP/kari-shea-1-SAnr-Ixw5-OY-unsplash.jpg",
-      "category": "Laptops",
-      "price": 95,
-      "description": "15.6-inch laptop with a sleek design and AMD Ryzen processor.",
-      "specification": ["15.6 inch FHD", "AMD Ryzen 5", "8GB RAM", "256GB SSD"],
-      "availability": true,
-      "rating": 4.3,
-      "popularity": 120
-    },
-    {
-      "product_id": 2,
-      "product_title": "HP Pavilion 14",
-      "product_image": "https://i.ibb.co.com/VVnrfT9/luca-bravo-9l-326-FISzk-unsplash.jpg",
-      "category": "Laptops",
-      "price": 100,
-      "description": "Compact 14-inch laptop with Intel Core i5 processor.",
-      "specification": ["14 inch FHD", "Intel Core i5", "8GB RAM", "512GB SSD"],
-      "availability": true,
-      "rating": 4.5,
-      "popularity": 140
-    },
-    {
-      "product_id": 3,
-      "product_title": "Lenovo ThinkPad X1",
-      "product_image": "https://i.ibb.co.com/7WkSNC8/ui8-z8lfwp-QVXJo-unsplash.jpg",
-      "category": "Laptops",
-      "price": 99,
-      "description": "Business laptop with exceptional durability and performance.",
-      "specification": ["14 inch FHD", "Intel Core i7", "16GB RAM", "1TB SSD"],
-      "availability": true,
-      "rating": 4.8,
-      "popularity": 190
-    },
-    {
-      "product_id": 4,
-      "product_title": "Asus VivoBook 15",
-      "product_image": "https://i.ibb.co.com/jVbrRGM/maxim-hopman-Hin-rzh-Od-Ws-unsplash.jpg",
-      "category": "Laptops",
-      "price": 97,
-      "description": "Lightweight laptop with great performance and battery life.",
-      "specification": ["15.6 inch FHD", "Intel Core i5", "8GB RAM", "512GB SSD"],
-      "availability": false,
-      "rating": 4.2,
-      "popularity": 100
-    },
-    {
-      "product_id": 5,
-      "product_title": "Acer Aspire 5",
-      "product_image": "https://i.ibb.co.com/jzTvjBv/keila-hotzel-t-Jt-Uv-IG3v-PI-unsplash.jpg",
-      "category": "Laptop",
-      "price": 89,
-      "description": "Affordable laptop with great multitasking capabilities.",
-      "specification": ["15.6 inch HD", "Intel Core i3", "4GB RAM", "128GB SSD"],
-      "availability": true,
-      "rating": 4.0,
-      "popularity": 90
-    },
-    {
-      "product_id": 6,
-      "product_title": "Microsoft Surface Laptop 3",
-      "product_image": "https://i.ibb.co.com/G37sWCQ/radek-grzybowski-e-BRTYyjwp-RY-unsplash.jpg",
-      "category": "Laptop",
-      "price": 100,
-      "description": "Premium laptop with touch screen and slim design.",
-      "specification": ["13.5 inch PixelSense", "Intel Core i7", "16GB RAM", "512GB SSD"],
-      "availability": true,
-      "rating": 4.7,
-      "popularity": 200
-    },
-    {
-      "product_id": 7,
-      "product_title": "Samsung Galaxy S21",
-      "product_image": "https://i.ibb.co.com/tX5Zyrw/lacie-slezak-e-Jsh9-LKn-X-A-unsplash.jpg",
-      "category": "Phones",
-      "price": 75,
-      "description": "Flagship smartphone with advanced camera and fast performance.",
-      "specification": ["6.2 inch QHD+", "Exynos 2100", "8GB RAM", "128GB Storage"],
-      "availability": true,
-      "rating": 4.6,
-      "popularity": 300
-    },
-    {
-      "product_id": 8,
-      "product_title": "Google Pixel 6",
-      "product_image": "https://i.ibb.co.com/kJTxR1S/anh-nhat-N9w70b-uly-I-unsplash.jpg",
-      "category": "Phones",
-      "price": 80,
-      "description": "Google’s latest phone with excellent camera capabilities.",
-      "specification": ["6.4 inch OLED", "Google Tensor", "8GB RAM", "128GB Storage"],
-      "availability": false,
-      "rating": 4.5,
-      "popularity": 250
-    },
-    {
-      "product_id": 9,
-      "product_title": "JBL Bluetooth Speaker",
-      "product_image": "https://i.ibb.co.com/vXhpRxd/robert-torres-dm-Fwu-NMw-Ar-I-unsplash.jpg",
-      "category": "Accessories",
-      "price": 50,
-      "description": "Portable Bluetooth speaker with excellent sound quality.",
-      "specification": ["10 hours playback", "Waterproof", "Bluetooth 5.0"],
-      "availability": true,
-      "rating": 4.4,
-      "popularity": 180
-    },
-    {
-      "product_id": 10,
-      "product_title": "Logitech Wireless Mouse",
-      "product_image": "https://i.ibb.co.com/wzBBjGF/oscar-ivan-esquivel-arteaga-Ztx-ED1cp-B1-E-unsplash.jpg",
-      "category": "Accessories",
-      "price": 55,
-      "description": "Reliable wireless mouse with ergonomic design.",
-      "specification": ["2.4 GHz Wireless", "USB Receiver", "Optical Tracking"],
-      "availability": true,
-      "rating": 4.2,
-      "popularity": 160
-    },
-    {
-      "product_id": 11,
-      "product_title": "MacBook Air M1",
-      "product_image": "https://i.ibb.co.com/RhDwTSD/jessy-smith-z-FOm6-Kz-A-7g-unsplash.jpg",
-      "category": "Macbook",
-      "price": 100,
-      "description": "Lightweight MacBook with powerful M1 chip.",
-      "specification": ["13.3 inch Retina Display", "Apple M1", "8GB RAM", "256GB SSD"],
-      "availability": true,
-      "rating": 4.8,
-      "popularity": 500
-    },
-    {
-      "product_id": 12,
-      "product_title": "https://i.ibb.co.com/Ph6Yv8r/daniel-romero-f-CSau-HX0-R0-unsplash.jpg",
-      "category": "iPhone",
-      "price": 100,
-      "description": "Premium model with advanced camera and smooth performance.",
-      "specification": ["6.1 inch OLED", "A15 Bionic", "128GB Storage", "ProMotion Display"],
-      "availability": false,
-      "rating": 4.9,
-      "popularity": 480
-    }
-  ]
+  {
+    "product_id": 1,
+    "product_title": "Dell Inspiron 15",
+    "product_image": "https://i.ibb.co.com/QCQ41qP/kari-shea-1-SAnr-Ixw5-OY-unsplash.jpg",
+    "category": "Laptops",
+    "price": 95,
+    "description": "15.6-inch laptop with a sleek design and AMD Ryzen processor.",
+    "specification": [
+      "15.6 inch FHD",
+      "AMD Ryzen 5",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "popularity": 120
+  },
+  {
+    "product_id": 2,
+    "product_title": "HP Pavilion 14",
+    "product_image": "https://i.ibb.co.com/VVnrfT9/luca-bravo-9l-326-FISzk-unsplash.jpg",
+    "category": "Laptops",
+    "price": 100,
+    "description": "Compact 14-inch laptop with Intel Core i5 processor.",
+    "specification": [
+      "14 inch FHD",
+      "Intel Core i5",
+      "8GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "popularity": 140
+  },
+  {
+    "product_id": 3,
+    "product_title": "Lenovo ThinkPad X1",
+    "product_image": "https://i.ibb.co.com/7WkSNC8/ui8-z8lfwp-QVXJo-unsplash.jpg",
+    "category": "Laptops",
+    "price": 99,
+    "description": "Business laptop with exceptional durability and performance.",
+    "specification": [
+      "14 inch FHD",
+      "Intel Core i7",
+      "16GB RAM",
+      "1TB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "popularity": 190
+  },
+  {
+    "product_id": 4,
+    "product_title": "Asus VivoBook 15",
+    "product_image": "https://i.ibb.co.com/jVbrRGM/maxim-hopman-Hin-rzh-Od-Ws-unsplash.jpg",
+    "category": "Laptops",
+    "price": 97,
+    "description": "Lightweight laptop with great performance and battery life.",
+    "specification": [
+      "15.6 inch FHD",
+      "Intel Core i5",
+      "8GB RAM",
+      "512GB SSD"
+    ],
+    "availability": false,
+    "rating": 4.2,
+    "popularity": 100
+  },
+  {
+    "product_id": 5,
+    "product_title": "Acer Aspire 5",
+    "product_image": "https://i.ibb.co.com/jzTvjBv/keila-hotzel-t-Jt-Uv-IG3v-PI-unsplash.jpg",
+    "category": "Laptop",
+    "price": 89,
+    "description": "Affordable laptop with great multitasking capabilities.",
+    "specification": [
+      "15.6 inch HD",
+      "Intel Core i3",
+      "4GB RAM",
+      "128GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.0,
+    "popularity": 90
+  },
+  {
+    "product_id": 6,
+    "product_title": "Microsoft Surface Laptop 3",
+    "product_image": "https://i.ibb.co.com/G37sWCQ/radek-grzybowski-e-BRTYyjwp-RY-unsplash.jpg",
+    "category": "Laptop",
+    "price": 100,
+    "description": "Premium laptop with touch screen and slim design.",
+    "specification": [
+      "13.5 inch PixelSense",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "popularity": 200
+  },
+  {
+    "product_id": 7,
+    "product_title": "Samsung Galaxy S21",
+    "product_image": "https://i.ibb.co.com/tX5Zyrw/lacie-slezak-e-Jsh9-LKn-X-A-unsplash.jpg",
+    "category": "Phones",
+    "price": 75,
+    "description": "Flagship smartphone with advanced camera and fast performance.",
+    "specification": [
+      "6.2 inch QHD+",
+      "Exynos 2100",
+      "8GB RAM",
+      "128GB Storage"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "popularity": 300
+  },
+  {
+    "product_id": 8,
+    "product_title": "Google Pixel 6",
+    "product_image": "https://i.ibb.co.com/kJTxR1S/anh-nhat-N9w70b-uly-I-unsplash.jpg",
+    "category": "Phones",
+    "price": 80,
+    "description": "Google’s latest phone with excellent camera capabilities.",
+    "specification": [
+      "6.4 inch OLED",
+      "Google Tensor",
+      "8GB RAM",
+      "128GB Storage"
+    ],
+    "availability": false,
+    "rating": 4.5,
+    "popularity": 250
+  },
+  {
+    "product_id": 9,
+    "product_title": "JBL Bluetooth Speaker",
+    "product_image": "https://i.ibb.co.com/vXhpRxd/robert-torres-dm-Fwu-NMw-Ar-I-unsplash.jpg",
+    "category": "Accessories",
+    "price": 50,
+    "description": "Portable Bluetooth speaker with excellent sound quality.",
+    "specification": [
+      "10 hours playback",
+      "Waterproof",
+      "Bluetooth 5.0"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "popularity": 180
+  },
+  {
+    "product_id": 10,
+    "product_title": "Logitech Wireless Mouse",
+    "product_image": "https://i.ibb.co.com/wzBBjGF/oscar-ivan-esquivel-arteaga-Ztx-ED1cp-B1-E-unsplash.jpg",
+    "category": "Accessories",
+    "price": 55,
+    "description": "Reliable wireless mouse with ergonomic design.",
+    "specification": [
+      "2.4 GHz Wireless",
+      "USB Receiver",
+      "Optical Tracking"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "popularity": 160
+  },
+  {
+    "product_id": 11,
+    "product_title": "MacBook Air M1",
+    "product_image": "https://i.ibb.co.com/RhDwTSD/jessy-smith-z-FOm6-Kz-A-7g-unsplash.jpg",
+    "category": "Macbook",
+    "price": 100,
+    "description": "Lightweight MacBook with powerful M1 chip.",
+    "specification": [
+      "13.3 inch Retina Display",
+      "Apple M1",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "popularity": 500
+  },
+  {
+    "product_id": 12,
+    "product_title": "iPhone 13 Pro",
+    "product_image": "https://i.ibb.co.com/Ph6Yv8r/daniel-romero-f-CSau-HX0-R0-unsplash.jpg",
+    "category": "iPhone",
+    "price": 100,
+    "description": "Premium model with advanced camera and smooth performance.",
+    "specification": [
+      "6.1 inch OLED",
+      "A15 Bionic",
+      "128GB Storage",
+      "ProMotion Display"
+    ],
+    "availability": false,
+    "rating": 4.9,
+    "popularity": 480
+  }
+]
