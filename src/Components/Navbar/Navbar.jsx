@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import './Navbar.css'
 import { useEffect } from 'react';
+import { ObjectContext } from '../Root/Root';
 
 const Navbar = () => {
-
+const {selectedProducts, price, selectedWishList, wishPrice} = useContext(ObjectContext);
     const location = useLocation();
 
     const [bgClass, setBgClass] = useState("text-[#9538E2] bg-white w-11/12");
@@ -62,39 +63,40 @@ const Navbar = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                         <div className="indicator bg-white rounded-full p-1">
                             <img src="https://img.icons8.com/?size=24&id=3337&format=png" alt="Cart icon!" />
-                            <span className="badge badge-sm indicator-item text-[#9538E2]">{0}</span>
-                        </div>
-                    </div>
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-                        <div className="indicator bg-white rounded-full p-1">
-                            <img src="https://img.icons8.com/?size=24&id=85038&format=png" alt="Heart icon!" />
-                            <span className="badge badge-sm indicator-item text-[#9538E2]">{0}</span>
+                            <span className="badge badge-sm indicator-item text-[#9538E2]">{selectedProducts.length}</span>
                         </div>
                     </div>
                     <div
                         tabIndex={0}
                         className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
                         <div className="card-body">
-                            <span className="text-lg font-bold text-[#9538E2]">{0} Items</span>
-                            <span className="border-t-2 border-[#9538E2] text-[#9538E2]">Subtotal: ${0}</span>
+                            <span className="text-lg font-bold text-[#9538E2]">{selectedProducts.length} Items</span>
+                            <span className="border-t-2 border-[#9538E2] text-[#9538E2]">Subtotal: ${price}</span>
                             <div className="card-actions">
-                                <button className="btn btn-primary rounded-lg bg-[#9538E2] btn-block">Dashboard</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        tabIndex={0}
-                        className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-                        <div className="card-body">
-                            <span className="text-lg font-bold text-[#9538E2]">{0} Items</span>
-                            <span className="border-t-2 border-[#9538E2] text-[#9538E2]">Subtotal: ${0}</span>
-                            <div className="card-actions">
-                                <button className="btn btn-primary rounded-lg bg-[#9538E2] btn-block">Dashboard</button>
+                                <Link className="btn btn-primary rounded-lg bg-[#9538E2] btn-block" to="/dashboard">Dashboard</Link>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div className="dropdown dropdown-end">
+                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                        <div className="indicator bg-white rounded-full p-1">
+                            <img src="https://img.icons8.com/?size=24&id=85038&format=png" alt="Heart icon!" />
+                            <span className="badge badge-sm indicator-item text-[#9538E2]">{selectedWishList.length}</span>
+                        </div>
+                    </div>
+                    <div
+                        tabIndex={0}
+                        className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                        <div className="card-body">
+                            <span className="text-lg font-bold text-[#9538E2]">{selectedWishList.length} Items</span>
+                            <span className="border-t-2 border-[#9538E2] text-[#9538E2]">Subtotal: ${wishPrice}</span>
+                            <div className="card-actions">
+                            <Link className="btn btn-primary rounded-lg bg-[#9538E2] btn-block" to="/dashboard">Dashboard</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

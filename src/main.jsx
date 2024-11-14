@@ -13,7 +13,11 @@ import Statistics from './Components/Statistics/Statistics.jsx';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import Popularity from './Components/Popularity/Popularity.jsx';
 import AllProduct from './Components/AllProduct/AllProduct.jsx';
-
+import ProductDetail from './Components/ProductDetail/ProductDetail.jsx';
+import Cart from './Components/Cart/Cart.jsx';
+import WishList from './Components/WishList/WishList.jsx';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 const router = createBrowserRouter([
@@ -21,11 +25,12 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
+    loader: () => fetch('../gadgets.json'),
     children: [
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('/gadgets.json'),
+        loader: () => fetch('../gadgets.json'),
         children:[
           {
             path: '/',
@@ -38,16 +43,34 @@ const router = createBrowserRouter([
         ]
       },
       {
-        path: 'statistics',
-        element: <Statistics></Statistics>
+        path: '/:product_id',
+        element: <ProductDetail></ProductDetail>,
+        loader: () => fetch('../gadgets.json')
       },
       {
-        path: 'dashboard',
-        element: <Dashboard></Dashboard>
+        path: '/statistics',
+        element: <Statistics></Statistics>,
+        loader: () => fetch('../gadgets.json')
       },
       {
-        path: 'popularity',
-        element: <Popularity></Popularity>
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>,
+        loader: () => fetch('../gadgets.json'),
+        children: [
+         {
+          path: '/dashboard/cart',
+          element: <Cart></Cart>,
+         },
+         {
+          path: '/dashboard/wishlist',
+          element: <WishList></WishList>,
+         }
+        ]
+      },
+      {
+        path: '/popularity',
+        element: <Popularity></Popularity>,
+        loader: () => fetch('../gadgets.json')
       }
     ]
   },
@@ -58,5 +81,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer />
   </StrictMode>,
 )
